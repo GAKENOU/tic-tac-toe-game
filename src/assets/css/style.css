@@ -1,0 +1,187 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.p-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:root,
+.theme-01 {
+  --clr-neutral-50: #fff;
+  --clr-neutral-100: #f5f5f5;
+  --clr-neutral-200: #e5e5e5;
+  --clr-neutral-300: #d4d4d4;
+  --clr-neutral-400: #a3a3a3;
+  --clr-neutral-500: #737373;
+  --clr-neutral-600: #525252;
+  --clr-neutral-700: #404040;
+  --clr-neutral-800: #262626;
+  --clr-neutral-900: #0a0a0a;
+}
+
+:root,
+.theme-02 {
+  --clr-neutral-50: #0a0a0a;
+  --clr-neutral-100: #262626;
+  --clr-neutral-200: #404040;
+  --clr-neutral-300: #525252;
+  --clr-neutral-400: #737373;
+  --clr-neutral-500: #a3a3a3;
+  --clr-neutral-600: #d4d4d4;
+  --clr-neutral-700: #e5e5e5;
+  --clr-neutral-800: #f5f5f5;
+  --clr-neutral-900: #fff;
+}
+
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+
+.bezel {
+  border-radius: 55.33px;
+  height: 800px;
+  padding: 4px;
+  width: 400px;
+}
+.bezel .inner-bezel {
+  background-color: var(--clr-neutral-900);
+  border: 1px solid var(--clr-neutral-50);
+  border-radius: 55.33px;
+  height: 100%;
+  padding: 80px 10px;
+  width: 100%;
+}
+.bezel .inner-bezel .screen {
+  background-color: var(--clr-neutral-50);
+  height: 100%;
+  width: 100%;
+}
+.bezel--key, .bezel .down-volume, .bezel .up-volume, .bezel .power {
+  background-color: #0a0a0a;
+  height: 40px;
+  width: 2px;
+}
+.bezel .power {
+  right: 3px;
+  top: 130px;
+}
+.bezel .up-volume {
+  left: 3px;
+  top: 130px;
+}
+.bezel .down-volume {
+  left: 3px;
+  top: 180px;
+}
+.bezel .home {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  height: 84px;
+  justify-content: center;
+  width: 100%;
+}
+.bezel .home-key {
+  border: 1px solid var(--clr-neutral-50);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.cover {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.cover .glass-overlay {
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.cover .glass-overlay::before {
+  background-color: rgba(10, 10, 10, 0.2);
+  content: "";
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

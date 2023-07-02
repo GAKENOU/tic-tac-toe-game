@@ -1,0 +1,6 @@
+export const TicTacToeDefault = () => {
+    return (
+        <>
+        </>
+    )
+}
